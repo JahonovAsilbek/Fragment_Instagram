@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PostFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/z1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center|start"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:paddingStart="20dp"
+            android:src="@drawable/ic_leftarrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:text="pdpuz"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/vidjet_bar"
+        app:layout_constraintTop_toBottomOf="@id/z1"
+        tools:listitem="@layout/item_post" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vidjet_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/search"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toRightOf="@id/home"
+            app:layout_constraintRight_toLeftOf="@id/plus"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_plus_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toRightOf="@id/search"
+            app:layout_constraintRight_toLeftOf="@id/heart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/heart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toRightOf="@id/plus"
+            app:layout_constraintRight_toLeftOf="@id/circlaimageview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circlaimageview"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toRightOf="@id/heart"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

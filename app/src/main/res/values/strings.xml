@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fragments Instagram App</string>
+    <string name="pdp">Подписаны <b>kh.nazirjonovna, captain_0850</b> <br></br>и ещё 40</string>
+    <string name="posts"><b>545</b><br></br> публикаций</string>
+    <string name="followers"><b>23.2тыс.</b><br></br> подписчиков</string>
+    <string name="following"><b>3</b><br></br> подписок</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="post_liked">Нравится <b>captain_0850</b> и <b>ещё 139</b></string>
+    <string name="birnarsa1">Посмотреть все комментарии (11)</string>
+    <string name="hint">Добавте комментарий...</string>
+</resources>
